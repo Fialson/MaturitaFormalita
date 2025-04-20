@@ -1,0 +1,108 @@
+/* css variables pro praci v js s nimi */
+:root{
+  --menuPosition: -100%;
+  --menuBtnDisplay: block;
+  --hamburgerDisplay: block;
+}
+
+.relativeFull{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+/* class která nám dává carousel menu doprava stránky */
+.w-100-end-center{
+  width: 100%;
+  margin: auto;
+  height: inherit;
+  position: absolute;
+  /*inset je to samé jako top:0; left:0; */
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+#canvas canvas{
+  min-height: 100vh;
+  background-color: rgb(103, 83, 60);
+}
+
+.carousel-menu{
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  max-height: 70vh;
+  border-radius: 10px;
+  padding: clamp(.1em, .65em, 1vw) 1.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  position: relative;
+  right: var(--menuPosition);
+  transition: .5s all;
+}
+
+.carousel-menu p{
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: .5em;
+  border-radius: 10px;
+  box-sizing: content-box;
+  cursor: pointer;
+  text-align: center;
+  margin: .5em;
+  color: white;
+  font-size: clamp(0.85em, 1em, 1.25vw);
+}
+
+/* měníme barvu prvního p v caousel-menu, v tomto případě počáteční pozice*/
+.carousel-menu p:first-of-type{
+  background-color: rgba(255, 255, 255, .8);
+  color: black;
+}
+
+/* tlacitko pro otvírání carousel-menu*/
+#btnCarouselMenu{
+  height: 34px;
+  width: 34px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  display: var(--menuBtnDisplay);
+  top: 50%;
+  left: 85%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/* vytvarime kroužek doprostred btn carousel menu, kterému se při hoveru zvětší outline */
+#btnCarouselMenu::after{
+  content: "";
+  position: absolute;
+  top: 15.5%;
+  left: 15.5%;
+  width: 70%;
+  height: 70%;
+  /* nastavuju tomu stejný radius jako u tlacitka, inherit bere hodnotu od parent elementu */
+  border-radius: inherit;
+  /* outline používám proto že nemění rozměry, je uvnitř objektu, tzn. že se jednodušeji zarovnatelná na střed, než kdyby měla border, který by to posunul */
+  outline: 2px solid black;
+  transition: .15s all;
+}
+
+#btnCarouselMenu:hover::after{
+  outline: 4px solid black;
+}
+
+/* tlacitko na zobrazeni navbaru  */
+#hamburgerGalerie{
+  z-index: 100;
+  position: fixed;
+  padding: 3% 0;
+  margin-left: calc(97% - 25px);
+  display: var(--hamburgerDisplay);
+}

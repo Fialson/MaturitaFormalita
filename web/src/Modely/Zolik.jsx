@@ -1,0 +1,401 @@
+import React, { forwardRef} from 'react'
+import { useGLTF } from '@react-three/drei'
+
+const Zolik = forwardRef((props, ref) => {
+  const { nodes, materials } = useGLTF('./assets/zolik.glb')
+  return (
+    <group {...props} dispose={null} ref={ref}>
+       <group position={[0.187, 0.252, -1.328]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube050.geometry}
+          material={materials['Material.067']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube050_1.geometry}
+          material={materials['Material.068']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube050_2.geometry}
+          material={materials['Material.069']}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube015.geometry}
+        material={materials['Material.068']}
+        position={[-0.88, 0.206, 0.454]}
+        rotation={[0, 0, Math.PI]}
+        scale={1.344}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube016.geometry}
+        material={nodes.Cube016.material}
+        position={[0.218, 0.136, 0.017]}
+        scale={1.344}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube017.geometry}
+        material={materials['Material.068']}
+        position={[-0.428, 0.206, 0.059]}
+        rotation={[-Math.PI, -Math.PI / 2, 0]}
+        scale={1.344}
+      />
+      <group position={[-0.187, 0.196, -0.744]} scale={0.108}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube054.geometry}
+          material={materials['ramy.005']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube054_1.geometry}
+          material={materials['parapet.005']}
+        />
+      </group>
+      <group position={[-0.187, 0.196, -1.956]} scale={0.108}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube055.geometry}
+          material={materials['ramy.006']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube055_1.geometry}
+          material={materials['parapet.006']}
+        />
+      </group>
+      <group position={[-0.187, 0.196, -2.489]} scale={0.108}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube056.geometry}
+          material={materials['ramy.007']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube056_1.geometry}
+          material={materials['parapet.007']}
+        />
+      </group>
+      <group position={[-0.313, 0.196, 0.261]} rotation={[0, -0.831, 0]} scale={0.108}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube057.geometry}
+          material={materials['ramy.008']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube057_1.geometry}
+          material={materials['parapet.008']}
+        />
+      </group>
+      <group position={[-1.346, 0.196, 0.728]} rotation={[0, -1.571, 0]} scale={0.108}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube058.geometry}
+          material={materials['ramy.009']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube058_1.geometry}
+          material={materials['parapet.009']}
+        />
+      </group>
+      <group
+        position={[-1.025, 0.202, 0.707]}
+        rotation={[Math.PI / 2, 0, Math.PI / 2]}
+        scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube059.geometry}
+          material={materials['ramy.005']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube059_1.geometry}
+          material={materials['parapet.010']}
+        />
+      </group>
+      <group position={[-1.73, 0.249, 0.71]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube060.geometry}
+          material={materials['ramy.005']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube060_1.geometry}
+          material={materials['parapet.010']}
+        />
+      </group>
+      <group position={[-2.257, 0.249, 0.71]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube061.geometry}
+          material={materials['ramy.005']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube061_1.geometry}
+          material={materials['parapet.010']}
+        />
+      </group>
+      <group position={[0.793, 0.204, -1.044]} rotation={[Math.PI / 2, 0, Math.PI]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube062.geometry}
+          material={materials['ramy.005']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube062_1.geometry}
+          material={materials['parapet.010']}
+        />
+      </group>
+      <group position={[0.098, 0.187, 1.085]} rotation={[-Math.PI, 0.828, -Math.PI]} scale={0.108}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube063.geometry}
+          material={materials['ramy.010']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube063_1.geometry}
+          material={materials['parapet.010']}
+        />
+      </group>
+      <group position={[-0.042, 0.196, 1.235]} rotation={[Math.PI / 2, 0, -2.314]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube064.geometry}
+          material={materials['ramy.005']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube064_1.geometry}
+          material={materials['parapet.010']}
+        />
+      </group>
+      <group position={[-2.184, 0.248, 1.679]} rotation={[Math.PI, 0, Math.PI]} scale={0.847}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube065.geometry}
+          material={materials['ramy.005']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube065_1.geometry}
+          material={materials['parapet.005']}
+        />
+      </group>
+      <group position={[0.771, 0.198, -1.241]} rotation={[Math.PI, 0, Math.PI]} scale={0.108}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube066.geometry}
+          material={materials['ramy.011']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube066_1.geometry}
+          material={materials['parapet.011']}
+        />
+      </group>
+      <group position={[0.738, 0.263, 0.166]} rotation={[Math.PI, -1.179, Math.PI]} scale={0.785}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube067.geometry}
+          material={materials['ramy.012']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube067_1.geometry}
+          material={materials['parapet.010']}
+        />
+      </group>
+      <group position={[-0.199, 0.142, -0.2]} rotation={[Math.PI / 2, 0, 1.571]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube068.geometry}
+          material={materials['Material.070']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube068_1.geometry}
+          material={materials['ramy.005']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube068_2.geometry}
+          material={materials['parapet.010']}
+        />
+      </group>
+      <group position={[-0.199, 0.142, -1.12]} rotation={[Math.PI / 2, 0, 1.571]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube069.geometry}
+          material={materials['Material.071']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube069_1.geometry}
+          material={materials['ramy.013']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube069_2.geometry}
+          material={materials['parapet.012']}
+        />
+      </group>
+      <group position={[-1.888, 0.142, 0.707]} rotation={[Math.PI / 2, 0, Math.PI]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube070.geometry}
+          material={materials['Material.072']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube070_1.geometry}
+          material={materials['ramy.015']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube070_2.geometry}
+          material={materials['parapet.013']}
+        />
+      </group>
+      <group position={[-2.456, 0.369, 0.701]} rotation={[1.576, 1.571, 0]} scale={0.151}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube071.geometry}
+          material={materials['Material.073']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube071_1.geometry}
+          material={materials['Material.074']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube071_2.geometry}
+          material={materials['Material.075']}
+        />
+      </group>
+      <group
+        position={[-2.46, 0.404, 1.553]}
+        rotation={[Math.PI / 2, Math.PI / 2, 0]}
+        scale={2.734}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder014.geometry}
+          material={materials['Material.076']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder014_1.geometry}
+          material={materials['Material.077']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder014_2.geometry}
+          material={materials['Material.078']}
+        />
+      </group>
+      <group position={[-0.199, 0.142, -2.265]} rotation={[Math.PI / 2, 0, 1.571]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube072.geometry}
+          material={materials['Material.079']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube072_1.geometry}
+          material={materials['ramy.016']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube072_2.geometry}
+          material={materials['parapet.015']}
+        />
+      </group>
+      <group position={[-0.486, 0.147, 0.409]} rotation={[Math.PI / 2, 0, 2.394]} scale={1.344}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube073.geometry}
+          material={materials['Material.080']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube073_1.geometry}
+          material={materials['ramy.017']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube073_2.geometry}
+          material={materials['parapet.016']}
+        />
+      </group>
+    </group>
+  )
+})
+
+export default Zolik;
+useGLTF.preload('./assets/zolik.glb')

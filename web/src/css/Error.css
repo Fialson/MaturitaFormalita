@@ -1,0 +1,20 @@
+#error img{
+    max-height: 80vh;
+}
+
+#error{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+@media (max-width:1050px) {
+    #error{
+        flex-direction: column;
+    }
+
+    #error img{
+        max-height: 50vh;
+    }
+}
